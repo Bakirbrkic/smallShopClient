@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>TopBar.qml</file>
+        <file>SearchBox.qml</file>
+        <file>SquareCard.qml</file>
+        <file>RectangularCard.qml</file>
+        <file>ArticlesGrid.qml</file>
+        <file>RoundBackButton.qml</file>
+        <file>ContactModel.qml</file>
+        <file>PillButton.qml</file>
+        <file>ArticlesPopup.qml</file>
+        <file>CartPopup.qml</file>
+        <file>CartItemCard.qml</file>
+    </qresource>
+    <qresource prefix="/media">
+        <file>media/sale.png</file>
+        <file>media/sar.png</file>
+        <file>media/gear.png</file>
+        <file>media/gear-w.png</file>
+        <file>media/sale-w.png</file>
+        <file>media/shopbag.png</file>
+        <file>media/shopbag-p.png</file>
+        <file>media/shopbag-w.png</file>
+        <file>media/srch.png</file>
+        <file>media/srch-p.png</file>
+        <file>media/srch-w.png</file>
+        <file>media/igram.png</file>
+        <file>media/igram-p.png</file>
+        <file>media/igram-w.png</file>
+        <file>media/fb.png</file>
+        <file>media/loc1.jpg</file>
+        <file>media/loc2.jpg</file>
+        <file>media/igram-r.png</file>
+        <file>media/shopbag-r.png</file>
+        <file>media/srch-r.png</file>
+        <file>media/loader.gif</file>
+        <file>media/user.png</file>
+        <file>media/user-r.png</file>
+        <file>media/shopmm-r.png</file>
+        <file>media/shopmm-r-s.png</file>
+    </qresource>
+</RCC>

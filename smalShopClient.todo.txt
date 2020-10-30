@@ -1,0 +1,35 @@
+has navbar with title in the middle, 
+disount button left, 
+options button right
+-------------------------------
+| % |      ShopName       | O |
+-------------------------------
+
+under the top bar there is search bar
+when searched lists results
+every result has its card with image, price, description, location availability
+
+-------------------------------
+| What are you looking for? |o|
+-------------------------------
+
+-------------------------------
+|  ---  | ITEM NAME    price  |
+|  |-|  |					  |
+|  ---  | desc...     loc.av. |
+-------------------------------
+
+main page has map in the background
+Markers of all shop locations
+
+
+bottom has scrollable cards of market locations info
+whan clicked loads available items in that location
+
+first card in scroll is list all items
+
+------------  ----------------------
+| /-\      |  | /--\ Location Name |
+| | | List |  | |--| working hours |
+| \-/      |  | \--/ address       |
+------------  ----------------------
