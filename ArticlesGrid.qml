@@ -29,7 +29,7 @@ Rectangle{
     //Drag Handle
     Rectangle{
         id: dragHandle
-        height: 25
+        height: 50
         width: parent.width
         anchors.top: parent.top
         color: "#00000000"
@@ -40,9 +40,14 @@ Rectangle{
             radius: 10
             color: dragHandleColor
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
-            anchors.topMargin: 10
+            anchors.verticalCenter: parent.verticalCenter
 
+        }
+
+        RoundBackButton{
+            anchors.left: parent.left
+            anchors.leftMargin: 10
+            anchors.verticalCenter: parent.verticalCenter
         }
 
         MouseArea{

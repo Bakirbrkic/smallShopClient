@@ -24,6 +24,16 @@ Popup{
             id: cartTotalMenu
             width: parent.width
             height: parent.height*0.1
+
+            RoundBackButton{
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
+
+                onBackButtonPressed: {
+                    cpop.close();
+                }
+            }
+
             Row{
                 spacing: 2
                 anchors.centerIn: parent

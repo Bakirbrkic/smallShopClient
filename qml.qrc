@@ -40,5 +40,6 @@
         <file>media/user-r.png</file>
         <file>media/shopmm-r.png</file>
         <file>media/shopmm-r-s.png</file>
+        <file>media/back-g.png</file>
     </qresource>
 </RCC>

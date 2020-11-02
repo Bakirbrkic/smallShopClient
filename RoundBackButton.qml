@@ -5,30 +5,20 @@ import QtGraphicalEffects 1.15
 Rectangle{
     height: 40
     width: 40
-    radius: 20
-    anchors.left: parent.left
-    anchors.top: parent.top
-    anchors.margins: 10
+    color: "#00000000"
 
-    Text {
-        anchors.centerIn: parent
-        text: "<-"
+    signal backButtonPressed
+
+    Image {
+        anchors.fill: parent
+        source: "media/media/back-g.png"
+        fillMode: Image.PreserveAspectFit
     }
 
     MouseArea{
         anchors.fill: parent
         onPressed: {
-            dragToClose();
+            backButtonPressed();
         }
-    }
-
-    DropShadow{
-        anchors.fill: parent
-        horizontalOffset: 0
-        verticalOffset: 1
-        radius: 5.0
-        samples: 17
-        color: "#30000000"
-        source: parent
     }
 }
