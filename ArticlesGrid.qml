@@ -80,6 +80,7 @@ Rectangle{
                 backgroundColor: "white"
                 textColor: root.themeColourMain
                 iconSource: "https://api.sjedimnako.ba/shopClientDemo/"+model.img
+                //iconSource: model.img
                 cardTitleText: model.name
                 cardText: model.price + "KM, " + model.description
                 actionName: model.name
@@ -123,6 +124,29 @@ Rectangle{
         });
     }
 
+//        function loadAllItems(){
+//            var model;
+
+//            request('http://192.168.0.11/wptut/index.php/wp-json/wp/v2/shopitems?categories=3', function (o) {
+//                // translate response into object
+//                //model = JSON.parse(o.responseText);
+//                var response = JSON.parse(o.responseText);
+
+
+//                for(var i = response.length-1; i >= 0; i--){
+//                    var newItem = {};
+//                    newItem.name = response[i].title.rendered;
+//                    newItem.price = response[i].cmb2.smallshop_rest_metabox.price;
+//                    newItem.description = response[i].cmb2.smallshop_rest_metabox.itemdescription;
+//                    newItem.img = response[i].cmb2.smallshop_rest_metabox.image;
+//                    newItem.addedToList = false;
+//                    articlesModel.append(newItem);
+//                }
+//                alist.visible = true;
+//                animation.visible = false;
+//            });
+//        }
+
     function loadItems(query){
         var model;
         var i = query.toLowerCase();
@@ -141,6 +165,38 @@ Rectangle{
             animation.visible = false;
         });
     }
+
+//            function loadItems(query){
+//                var model;
+//                var i = query.toLowerCase();
+
+//                if(i[0] === 'c' && i[1] === '!')
+//                    i = "http://192.168.0.11/wptut/index.php/wp-json/wp/v2/shopitems?categories=" + i.substr(2);
+//                else
+//                    i = 'http://192.168.0.11/wptut/index.php/wp-json/wp/v2/shopitems?search='+i
+//                console.log(i);
+
+//                request(i, function (o) {
+//                    //clear all items in articlesGrid
+//                    articlesModel.clear();
+//                    // translate response into object
+//                    //model = JSON.parse(o.responseText);
+//                    var response = JSON.parse(o.responseText);
+//                    console.log(response.length)
+
+//                    for(var i = response.length-1; i >= 0; i--){
+//                        var newItem = {};
+//                        newItem.name = response[i].title.rendered;
+//                        newItem.price = response[i].cmb2.smallshop_rest_metabox.price;
+//                        newItem.description = response[i].cmb2.smallshop_rest_metabox.itemdescription;
+//                        newItem.img = response[i].cmb2.smallshop_rest_metabox.image;
+//                        newItem.addedToList = false;
+//                        articlesModel.append(newItem);
+//                    }
+//                    alist.visible = true;
+//                    animation.visible = false;
+//                });
+//            }
 
     //docs at https://gist.github.com/40/3192269
     function request(url, callback) {

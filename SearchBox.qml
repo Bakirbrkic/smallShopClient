@@ -86,11 +86,12 @@ Rectangle{
                         console.log("(pill) name: " + pillText + ", action: " + actionName);
                         searchBox.text = pillText;
                         searchBox.editingFinished();
-                        searchButton(pillText);
+                        searchButton(actionName);
                     }
 
                     PillButton{
                         pillText: "Čokolada"
+                        actionName: "c!2" // 2 is id of cokolada kategori in api
                         h: searchBoxBackground.height*0.7
                         onPillPressed: {
                             parent.pillPress(pillText, actionName);
@@ -99,6 +100,7 @@ Rectangle{
 
                     PillButton{
                         pillText: "Sladoled"
+                        actionName: "c!1" // 1 is id of sladoled kategori in api
                         h: searchBoxBackground.height*0.7
                         onPillPressed: {
                             parent.pillPress(pillText, actionName);

@@ -121,6 +121,7 @@ Popup{
         articlePopName.text = a.name;
         articlePopDesc.text = "Opis artikla: " + a.description;
         articlePopImage.source = "https://api.sjedimnako.ba/shopClientDemo/"+ a.img;
+        //articlePopImage.source = a.img;
         articlePopPrice.text = a.price + " KM";
         onList = a.addedToList;
         open();

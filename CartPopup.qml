@@ -80,6 +80,7 @@ Popup{
                     backgroundColor: "white"
                     textColor: root.themeColourMain
                     iconSource: "https://api.sjedimnako.ba/shopClientDemo/"+model.img
+                    //iconSource: model.img
                     cardTitleText: model.name
                     amount: model.amount
                     price: model.price
